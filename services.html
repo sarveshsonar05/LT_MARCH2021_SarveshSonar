@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" style=" scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+            background: white;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0%;
+            padding: 20px;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            box-shadow: 0px 0px 0px;
+
+        }
+
+        .elements {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-right: 45px;
+        }
+
+        .elements ul li {
+            display: inline;
+            margin: 15px;
+            font-weight: bold;
+            font-size: 17px;
+
+        }
+
+        .elements ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .elements ul li a:active {
+            color: red;
+        }
+
+        .elements ul li a:hover {
+            color: #bef887;
+        }
+
+        .elements ul {
+            position: relative;
+            right: -110%;
+            margin: 20px;
+        }
+
+        .logo {
+            font-size: 35px;
+            font-weight: bold;
+            color: aliceblue;
+            margin: 7px;
+        }
+
+        .midSec {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            font-family: cursive;
+        }
+
+        .content {
+            text-align: center;
+            font-size: large;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 45px;
+            margin-bottom: 50px;
+            padding: 50px;
+            box-shadow: 2px 2px 15px 7px #f3f4f7;
+            transition: .2s;
+            transition-timing-function: ease-in;
+            background-color: rgb(231, 243, 239);
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .box:hover {
+            box-shadow: 2px 2px 25px 7px rgb(199, 199, 199);
+        }
+
+        .box img {
+            height: 40%;
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .serviceBlock {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            background: linear-gradient(to right top, #d0e2e0, #cfe9e0, #d3eedc, #dcf3d6, #eaf6ce);
+            font-family: cursive;
+
+
+        }
+
+        .heading {
+            font-size: 25px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding: 15px;
+        }
+
+        .sec {
+            margin: 15px;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .sec a {
+            color: rgb(2, 104, 82);
+            text-decoration: none;
+        }
+
+        .sec a:hover {
+            color: #0a3619;
+
+        }
+
+        .sec::after {
+            content: "";
+            height: 3px;
+            width: 0%;
+            position: absolute;
+            background: rgb(0, 0, 0);
+            left: 0px;
+            bottom: -7px;
+            transition: .5s;
+
+        }
+
+        .sec:hover::after {
+            width: 100%;
+        }
+
+        .footer {
+            background-color: #00112c;
+            color: whitesmoke;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer img {
+            height: 25px;
+            width: 25px;
+            margin: 0 5px;
+
+        }
+
+        .footer img:hover {
+            background: whitesmoke;
+        }
+
+        .btn button {
+            border-radius: 12px;
+            background-color: rgb(245, 23, 60);
+            padding: 10px;
+            font-family: cursive;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid whitesmoke;
+        }
+
+        .btn button:hover {
+            background-color: rgb(228, 11, 47);
+
+        }
+
+        span a {
+            color: #0b0422;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="nav">
+        <div class="logo">SoftTech.io</div>
+        <div class="elements">
+            <ul>
+                <li><a href="home.html">Home</a> </li>
+                <li><a href="services.html">Services</a> </li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="serviceBlock">
+        <div class="heading" style="text-align: center;">
+            <h1>Services We Provide</h1>
+        </div>
+        <div class="services">
+            <div class="sec"><a href="#webDev">Web Development</a></div>
+            <div class="sec"><a href="#android">Android Development</a></div>
+            <div class="sec"><a href="#dataScience">Data Science</a></div>
+            <div class="sec"><a href="#machineLearning">Machine Learning</a></div>
+            <div class="sec"><a href="#cyberSecurity">Cyber Security</a></div>
+            <div class="sec"><a href="#artiIntelli">Artificial Intelligence</a></div>
+            <div class="sec"><a href="#progLang">Programming Languages</a></div>
+            <div class="sec"><a href="#dataStruct">Data Structure</a> </div>
+
+        </div>
+        <div class="buttons">
+
+        </div>
+
+    </div>
+
+
+    <div class="midSec">
+        <div class="heading" style="text-align: center; margin: 55px;">
+            <p></p>
+            <h1>Let's Learn and Grow Together!!</h1>
+        </div>
+        <div style="text-align: center; margin: 20px; font-size: 30px; color: rgb(154, 143, 173);">
+            <p>SoftTech is a online leading and premier Career coaching platform for imparting quality education to
+                shape students career.</p>
+        </div>
+        <div class="box" id="webDev">
+            <h1>Web Development</h1>
+            <div class="img">
+                <img src="webdev.jpg" alt="">
+            </div>
+            <div>
+                <p class="content">Web development is amongst those jobs that have a significantly higher job
+                    satisfaction rate. There are several reasons that web developers are so satisfied with their jobs –
+                    salary, work-life balance, and flexibility. The Full Stack Web Developer Job Guarantee Program is an
+                    intense bootcamp, that offers a complete suite of full stack development skills. Complete the course
+                    to master these skills and get a guaranteed job with a median pay of 9 LPA</p>
+            </div>
+            <div class="btn" type="button"><a href="contact.html"> <button>Enroll Now!</button></a></div>
+            <span style="margin-left:95%; position: relative; bottom: 30px;"><a href="#nav">scroll up</a> </span>
+
+
+        </div>
+        <div class="box" id="android">
+            <h1>Andriod Development</h1>
+            <div class="img">
+                <img src="android.jpg" alt="">
+            </div>
+            <div>
+                <p class="content">In this course, you’ll learn the basics of building Android apps with the Kotlin or
+                    Java programming language. Along the way, you'll develop a collection of apps to start your journey
+                    as an Android developer. This course will help prepare you for the Associate Android Developer
+                    certification exam. Earn your certification by passing a performance-based exam that proves you have
+                    the skills of an entry-level Android developer. Available in Kotlin or Java.</p>
+            </div>
+            <div class="btn" type="button"><a href="contact.html"> <button>Enroll Now!</button></a></div>
+            <span style="margin-left:95%; position: relative; bottom: 30px;"><a href="#nav">scroll up</a> </span>
+
+        </div>
+        <div class="box" id="dataScience">
+            <h1>Data Science</h1>
+            <div class="img">
+                <img src="datasci.jpg" alt="">
+            </div>
+            <div>
+                <p class="content">This online Data Science and Artificial Intelligence advanced certification course
+                    led by the IIT Madras faculty aims at helping you master all the basic and advanced level skills
+                    that are crucial in the field of Data Science, Machine Learning, Deep Learning, and Artificial
+                    Intelligence.</p>
+            </div>
+            <div class="btn" type="button"><a href="contact.html"> <button>Enroll Now!</button></a></div>
+            <span style="margin-left:95%; position: relative; bottom: 30px;"><a href="#nav">scroll up</a> </span>
+        </div>
+
+        <div class="box" id="machineLearning">
+            <h1>Machine Learning</h1>
+            <div class="img">
+                <img src="machinelearning.jpg" alt="">
+            </div>
+            <div>
+                <p class="content"> Ensure career success with this Machine Learning course. Learn this exciting branch
+                    of Artificial Intelligence with a program featuring 58 hrs of Applied Learning, interactive labs, 4
+                    hands-on projects, and mentoring. With our Machine Learning training, master Machine Learning
+                    concepts are required for a Machine learning certification. This Machine Learning online course will
+                    provide you with the skills needed to become a successful Machine Learning Engineer today.</p>
+            </div>
+            <div class="btn" type="button"><a href="contact.html"> <button>Enroll Now!</button></a></div>
+            <span style="margin-left:95%; position: relative; bottom: 30px;"><a href="#nav">scroll up</a> </span>
+        </div>
+
+        <div class="box" id="cyberSecurity">
+            <h1>Cyber Security</h1>
+            <div class="img">
+                <img src="cybersecurity.png" alt="">
+            </div>
+            <div>
+                <p class="content"> Become an industry-ready professional with Advanced Executive Program in
+                    Cybersecurity and transform your career in 6 months. This course provides a high-engagement learning
+                    experience with real-world applications and is designed for individuals who want to start a new,
+                    more fulfilling career.</p>
+            </div>
+            <div class="btn" type="button"><a href="contact.html"> <button>Enroll Now!</button></a></div>
+            <span style="margin-left:95%; position: relative; bottom: 30px;"><a href="#nav">scroll up</a> </span>
+        </div>
+
+        <div class="box" id="artiIntelli">
+            <h1>Artificial Intelligence</h1>
+            <div class="img">
+                <img src="artiIntelligent.jpg" alt="">
+            </div>
+            <div>
+                <p class="content">This AI ML certification course is ideal for working professionals with programming
+                    knowledge. Our AI ML Course covers key concepts like Statistics, Machine Learning, Deep Learning,
+                    NLP, and Reinforcement Learning. This program is delivered through our interactive learning model
+                    with live sessions by global practitioners, labs, and industry projects.</p>
+            </div>
+            <div class="btn" type="button"><a href="contact.html"> <button>Enroll Now!</button></a></div>
+            <span style="margin-left:95%; position: relative; bottom: 30px;"><a href="#nav">scroll up</a> </span>
+        </div>
+
+        <div class="box" id="progLang">
+            <h1>Programming Languages</h1>
+            <div class="img">
+                <img src="progLang.png" alt="">
+            </div>
+            <div>
+                <p class="content"> We provide toturiols for various programming Languages with hands on projects and
+                    active live doubt clearing sessions. We provide lots of modules and practice sessions to improve
+                    coding skills and built logic. Languages we include c,c++,java,python,php,sql.</p>
+            </div>
+            <div class="btn" type="button"><a href="contact.html"> <button>Enroll Now!</button></a></div>
+            <span style="margin-left:95%; position: relative; bottom: 30px;"><a href="#nav">scroll up</a> </span>
+        </div>
+
+        <div class="box" id="dataStruct">
+            <h1>Data Structure</h1>
+            <div class="img">
+                <img src="datastruct.jpg" alt="">
+            </div>
+            <div>
+                <p class="content"> Data Structures are typically used to organize, process, retrieve and store data on
+                    computers for efficient use. Having the right understanding and using the right data structures
+                    helps software engineers write the right code. Our program is designed to help you become an expert
+                    in Data structures and Algorithms and ace product interviews to scale up in your tech career. </p>
+            </div>
+            <div class="btn" type="button"><a href="contact.html"> <button>Enroll Now!</button></a></div>
+            <span style="margin-left:95%; position: relative; bottom: 30px;"><a href="#nav">scroll up</a> </span>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div>
+            <h1>SoftTech.io</h1>
+        </div>
+        <div class="followUs" style="margin: 10px;">
+            Follow us on:
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-logo.png" alt=""></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt=""></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt=""></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="linkedin.png" alt=""></a>
+        </div>
+        <div class="copy" style="margin: 10px;">
+            www.SoftTech.io &nbsp;&copy;All Rights Reserved
+        </div>
+
+    </div>
+
+</body>
+
+</html>

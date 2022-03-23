@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" style=" scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homePage</title>
+    <style>
+        body {
+            background: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0%;
+            padding: 20px;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            box-shadow: 0px 0px 0px;
+
+        }
+
+        .elements {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-right: 45px;
+        }
+
+        .elements ul li {
+            display: inline;
+            margin: 15px;
+            font-weight: bold;
+            font-size: 17px;
+
+        }
+
+        .elements ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .elements ul li a:hover {
+            color: #bef887;
+
+        }
+
+        .elements ul {
+            position: relative;
+            right: -110%;
+            margin: 20px;
+        }
+
+        .logo {
+            font-size: 35px;
+            font-weight: bold;
+            color: aliceblue;
+            margin: 7px;
+        }
+
+        .section::before {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img2.jpg") no-repeat center center/cover;
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 130px;
+            left: 0px;
+            height: 65%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .section img {
+            height: fit-content;
+            width: 100%;
+
+        }
+
+        .section h1 {
+            font-family: cursive;
+            font-size: 55px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+        }
+
+        .quote {
+            text-align: center;
+            text-align: justify;
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin-left: 300px;
+
+        }
+
+        .quote p {
+            margin-top: 100px;
+        }
+
+        h5 {
+            float: right;
+            margin-right: 28%;
+        }
+
+        .benifits {
+            margin-top: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(231, 243, 239);
+            width: 400px;
+            font-family: 'Dancing Script', cursive;
+            transition: .2s;
+            transition-timing-function: ease-in;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            box-shadow: 2px 2px 15px 7px #f3f4f7;
+        }
+
+        .box:hover {
+            box-shadow: 2px 2px 25px 7px rgb(199, 199, 199);
+        }
+
+        .box img {
+            height: 200px;
+            width: 300px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+
+        .box p {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #00112c;
+            color: whitesmoke;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer img {
+            height: 25px;
+            width: 25px;
+            margin: 0 5px;
+
+        }
+
+        .footer img:hover {
+            background: whitesmoke;
+        }
+
+     
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">SoftTech.io</div>
+        <div class="elements">
+            <ul>
+                <li><a href="home.html">Home</a> </li>
+                <li><a href="services.html">Services</a> </li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <div class="quote">
+            <p></p>
+            <h1>"Talk is Cheap, Show me Code!"</h1>
+            <h5>~Linus Torvalds</h5>
+
+        </div>
+    </div>
+    <div class="benifits ">
+        <div class="b" style="font-family:cursive;">
+            <h1>Moving towards E-Learning!</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="img7.png" alt="">
+            <h2>Digital Classroom</h2>
+            <p>Online learning is becoming a more traditional approach to achieving educational goals for a number of
+                reasons.
+                Whether a brick and mortar educational setting makes learning difficult for you or there are roadblocks
+                in your way, such as a job or family responsibilities, an online learning environment can provide you
+                with the education you are looking for, and the flexibility you need to work it into your daily routine.
+            </p>
+
+        </div>
+        <div class="box">
+            <img src="img3.png" alt="">
+            <h2>At your Own Pace</h2>
+            <p>With online learning, you can set your own pace, which can provide you with a better chance of adequately
+                absorbing and retaining the information in your coursework. Unlike traditional classes where you will
+                need to take notes feverishly during lectures so that you can review the material later, online learning
+                allows you to review the course materials as often as you like and at a time when you are most focused.
+                Discussions and lectures will be in the form of video and podcasts, which can be watched, paused, and
+                reviewed as needed so that you can make sure you are following along. It also provides you with the
+                luxury of being able to complete materials in courses that are easier for you more rapidly, so you can
+                take more time to focus on courses that you may find are more difficult.</p>
+
+        </div>
+        <div class="box">
+            <img src="img8.png" alt="">
+            <h2>Flexibility</h2>
+            <p>When you choose to continue your education online, you will have greater flexibility to juggle your
+                career, education, and home life without the confines of a fixed schedule. You will be able to log in
+                and complete your course work, study, and do homework, all at times that can fit in with your schedule,
+                instead of rearranging your schedule to work around traditional class times.</p>
+
+        </div>
+        <div class="box">
+            <img src="img5.jpg" alt="">
+            <h2>Easy Communication</h2>
+            <p>In a traditional classroom setting, you will likely only be able to communicate one-on-one with your
+                professor during their designated office hours, or maybe for a few minutes after class. When learning
+                online, you will be able to communicate with your professor via email, live chat, or by phone to get the
+                feedback you need or assistance to help improve your online learning experience.</p>
+
+        </div>
+        <div class="box">
+            <img src="efficiency.jpg" alt="">
+            <h2>Efficiency</h2>
+            <p>Online learning offers teachers an efficient way to deliver lessons to students. Online learning has a
+                number of tools such as videos, PDF's, podcasts, and teacherscan use all these tools as a part of their
+                lessons plans.By extending the lessons plan beyond traditional textbooks to include online resources,
+                teachers are able to become more effiient educators.</p>
+
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div>
+            <h1>SoftTech.io</h1>
+        </div>
+        <div class="followUs" style="margin: 10px;">
+            Follow us on:
+            <a href="www.facebook.com"><img src="facebook-logo.png" alt=""></a>
+            <a href="www.instagram.com"><img src="instagram.png" alt=""></a>
+            <a href="www.twitter.com"><img src="twitter.png" alt=""></a>
+            <a href="www.linkedin.com"><img src="linkedin.png" alt=""></a>
+        </div>
+        <div class="copy" style="margin: 10px;">
+            www.SoftTech.io &nbsp;&copy;All Rights Reserved
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

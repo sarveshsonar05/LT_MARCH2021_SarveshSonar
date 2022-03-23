@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" style=" scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <title>Contact</title>
+    <style>
+        body {
+            background: white;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0%;
+            padding: 20px;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            box-shadow: 0px 0px 0px;
+
+        }
+
+        .elements {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-right: 45px;
+        }
+
+        .elements ul li {
+            display: inline;
+            margin: 15px;
+            font-weight: bold;
+            font-size: 17px;
+
+        }
+
+        .elements ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            
+        }
+
+        .elements ul li a:hover {
+            color: #bef887;
+        }
+
+        .elements ul {
+            position: relative;
+            right: -110%;
+            margin: 20px ;
+           
+        }
+
+        .logo {
+            font-size: 35px;
+            font-weight: bold;
+            color: aliceblue;
+            margin: 7px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            border-radius: 20px;
+            margin: 30px 400px;
+            background-color: rgb(231, 243, 239);
+            padding: 12px;
+            transition: .2s;
+            transition-timing-function: ease-in;
+            box-shadow: 2px 2px 15px 7px #f3f4f7;
+
+        }
+
+        .container:hover {
+            box-shadow: 2px 2px 25px 7px rgb(199, 199, 199);
+
+        }
+
+        .form input {
+            margin: 5px;
+            padding: 17px;
+            width: 95%;
+        }
+
+        .footer {
+            background-color: #00112c;
+            color: whitesmoke;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer img {
+            height: 25px;
+            width: 25px;
+            margin: 0 5px;
+
+        }
+
+        .footer img:hover {
+            background: whitesmoke;
+        }
+
+        .no {
+            font-family: cursive;
+            font-size: 24px;
+            margin: 34px;
+            position: relative;
+            left: 60%;
+        }
+
+        .bttn {
+            padding: 7px;
+            margin: 10px;
+            background-color: rgb(245, 23, 60);
+            color: white;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .bttn:hover {
+            background-color: rgb(228, 11, 47);
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">SoftTech.io</div>
+        <div class="elements">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="no">
+        <span style="color: red;">Call</span> or <span style="color: green;">WhatsApp</span> : <b>1234567890 /
+            09876543321</b>
+    </div>
+
+    <div class="container">
+        <img src="contact.jpg" alt="" height="250px" width="300px" style="margin: 20px;">
+        <div class="form">
+
+            <div class="input">
+                <input type="text" id="name" name="name" placeholder=" Name">
+            </div>
+
+            <div class="input">
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="input">
+                <input type="text" id="phno" name="phno" placeholder="Phone No.">
+            </div>
+
+            <div class="input">
+                <input type="text" id="age" name="age" placeholder="Age">
+            </div>
+
+            <div class="input">
+                <input type="text" id="edu" name="edu" placeholder="Recent/Persuing education">
+            </div>
+
+            <div class="input">
+                <input type="text" id="domain" name="domain" placeholder="Interested Domain">
+            </div>
+
+            <div class="input">
+                <button class="bttn" onclick="submit()">Submit</button>
+            </div>
+           
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div>
+            <h1>SoftTech.io</h1>
+        </div>
+        <div class="followUs" style="margin: 10px;">
+            Follow us on:
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-logo.png" alt=""></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt=""></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt=""></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="linkedin.png" alt=""></a>
+        </div>
+        <div class="copy" style="margin: 10px;">
+            www.SoftTech.io &nbsp;&copy;All Rights Reserved
+        </div>
+
+    </div>
+<!-- -------------javascript -->
+    <script>
+
+        var namee; var emaill; var phnoo;
+        var agee; var eduu; var domainn;
+
+        function submit() {
+            namee = $("#name").val();
+            emaill = $("#email").val();
+            phnoo = $("#phno").val();
+            agee = $("#age").val();
+            eduu = $("#edu").val();
+            domainn = $("#domain").val();
+
+            if (isEmpty()) {
+
+                alert('Your response is sucessfully submitted ! Very soon you will receive a mail regarding furthur details.');
+                location.reload();
+            } else {
+                alert('Enter all fields');
+            }
+
+        }
+        function isEmpty() {
+
+            if (namee != "" && emaill != "" && phnoo != "" && agee != "" && eduu != "" && domainn != "") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
